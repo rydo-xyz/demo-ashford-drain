@@ -5,53 +5,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="DEMO — fictional Ashford Drain Co site for Kerbstone Studio portfolio. Not a real business." />
   <meta name="robots" content="noindex, nofollow" />
+  <meta name="theme-color" content="#070f1c" />
   <title>Ashford Drain Co — DEMO | Kerbstone Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
-
   <div class="demo-banner" role="status">
     <strong>DEMO</strong> — Fictional brand for <em>Kerbstone Studio</em> portfolio. Not a real business. Do not call or book.
   </div>
-
   <header class="site-header">
     <div class="wrap header-inner">
       <a class="logo" href="#top" aria-label="Ashford Drain Co home">
-        <svg class="logo-mark" viewBox="0 0 40 40" width="40" height="40" aria-hidden="true">
-          <rect width="40" height="40" rx="8" fill="#0b1f3a"/>
-          <path d="M8 22c4-8 8-12 12-12s8 4 12 12" stroke="#f5a623" stroke-width="3" fill="none" stroke-linecap="round"/>
-          <circle cx="20" cy="26" r="4" fill="#f5a623"/>
-        </svg>
+        <svg class="logo-mark" viewBox="0 0 40 40" width="40" height="40" aria-hidden="true"><rect width="40" height="40" rx="10" fill="#0b1f3a"/><path d="M8 22c4-8 8-12 12-12s8 4 12 12" stroke="#f5a623" stroke-width="3" fill="none" stroke-linecap="round"/><circle cx="20" cy="26" r="4" fill="#f5a623"/></svg>
         <span>
           <span class="logo-name">Ashford Drain Co</span>
-          <span class="logo-tag">DEMO · Mid-Kent</span>
+          <span class="logo-tag">DEMO · drainage</span>
         </span>
       </a>
-      <nav class="nav" aria-label="Primary">
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Menu">
+        <span class="nav-toggle-bars" aria-hidden="true"><span></span><span></span><span></span></span>
+      </button>
+      <nav class="nav" id="primary-nav" aria-label="Primary">
         <a href="#services">Services</a>
+        <a href="#process">Process</a>
         <a href="#areas">Areas</a>
         <a href="#reviews">Reviews</a>
         <a href="#faq">FAQ</a>
         <a href="#contact">Contact</a>
       </nav>
-      <a class="btn btn-amber header-cta" href="tel:01234567890">Call 01234 567890</a>
+      <a class="btn btn-accent header-cta" href="tel:01234567890">Emergency call · 01234 567890</a>
     </div>
   </header>
-
   <main id="main">
     <section class="hero" id="top">
       <div class="wrap hero-grid">
-        <div class="hero-copy">
+        <div class="hero-copy reveal">
           <p class="eyebrow">DEMO · Emergency drainage · Mid-Kent</p>
-          <h1>Blocked drain? We’ll get your pipes flowing again.</h1>
-          <p class="lede">
-            Fictional local drain specialists for this Kerbstone Studio Spark demo —
-            unblock, CCTV survey, and repair with clear pricing and same-day response language.
-          </p>
+          <h1>Blocked drain? Clear pipes. Clear day.</h1>
+          <p class="lede">Fictional Mid-Kent drain specialists for this Kerbstone Studio Spark demo — unblock, CCTV survey, and repair with same-day response language and a phone-first layout.</p>
           <div class="hero-actions">
-            <a class="btn btn-amber btn-lg" href="tel:01234567890">Emergency call · 01234 567890</a>
-            <a class="btn btn-ghost btn-lg" href="#contact">Request a callback</a>
+            <a class="btn btn-accent btn-lg" href="tel:01234567890">Emergency call · 01234 567890</a>
+            <a class="btn btn-ghost btn-lg" href="#contact">Send a message</a>
           </div>
           <ul class="hero-points">
             <li>Same-day slots (demo copy)</li>
@@ -59,190 +57,161 @@
             <li>Fully insured (fictional claim)</li>
           </ul>
         </div>
-        <aside class="hero-card" aria-label="Quick contact card">
-          <p class="card-label">DEMO contact card</p>
-          <h2>Need help now?</h2>
-          <p>This number is fictional. Use it only to preview the tel: link behaviour.</p>
-          <a class="btn btn-navy btn-block" href="tel:01234567890">01234 567890</a>
-          <p class="card-note">Open 24/7 · Mid-Kent · DEMO ONLY</p>
-        </aside>
+        <div class="hero-visual reveal">
+          <svg class="hero-scene" viewBox="0 0 560 420" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <defs>
+              <linearGradient id="hg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f5a623" stop-opacity=".9"/><stop offset="1" stop-color="#ffc857" stop-opacity=".4"/></linearGradient>
+              <radialGradient id="glow" cx="50%" cy="40%" r="50%"><stop stop-color="#f5a623" stop-opacity=".35"/><stop offset="1" stop-color="transparent"/></radialGradient>
+            </defs>
+            <rect width="560" height="420" fill="url(#glow)"/>
+            <ellipse cx="280" cy="340" rx="180" ry="28" fill="#070f1c" opacity=".5"/>
+            <path d="M120 300c40-90 80-130 160-130s120 40 160 130" fill="none" stroke="url(#hg)" stroke-width="18" stroke-linecap="round"/>
+            <path d="M160 290c30-60 60-90 120-90s90 30 120 90" fill="none" stroke="#e8eef6" stroke-opacity=".15" stroke-width="8"/>
+            <circle cx="280" cy="300" r="36" fill="#163352" stroke="#f5a623" stroke-width="4"/>
+            <circle cx="280" cy="300" r="14" fill="#f5a623"/>
+            <path d="M80 80h60M100 60v40M420 100h50M445 80v40" stroke="#ffc857" stroke-opacity=".4" stroke-width="3" stroke-linecap="round"/>
+          </svg>
+          <aside class="hero-card" aria-label="Quick contact card">
+            <p class="card-label">DEMO contact card</p>
+            <h2>Need help now?</h2>
+            <p>This number is fictional. Use it only to preview the tel: link behaviour.</p>
+            <a class="btn btn-accent btn-block" href="tel:01234567890">01234 567890</a>
+            <p class="card-note">Mid-Kent · DEMO ONLY</p>
+          </aside>
+        </div>
       </div>
     </section>
-
-    <section class="services" id="services">
+    <section class="metrics" aria-label="Trust metrics">
+      <div class="wrap metrics-grid">
+        <div class="metric reveal"><strong>2 hr</strong><span>avg demo response</span></div>
+        <div class="metric reveal"><strong>1,200+</strong><span>drains cleared (demo)</span></div>
+        <div class="metric reveal"><strong>24/7</strong><span>emergency line</span></div>
+        <div class="metric reveal"><strong>£0</strong><span>call-out on booked jobs</span></div>
+      </div>
+    </section>
+    <section class="section" id="services">
       <div class="wrap">
-        <header class="section-head">
-          <p class="eyebrow">What we do</p>
-          <h2>Drainage services</h2>
-          <p>Three core offers for a typical UK trade Spark page — all fictional.</p>
+        <header class="section-head reveal">
+          <p class="eyebrow">Services</p>
+          <h2>What this Spark skin sells</h2>
+          <p>Core offers for a typical UK drainage trade page — all fictional copy for portfolio layout.</p>
         </header>
         <div class="card-grid">
-          <article class="service-card">
-            <div class="icon" aria-hidden="true">
-              <svg viewBox="0 0 48 48" width="48" height="48"><circle cx="24" cy="24" r="22" fill="#e8eef6"/><path d="M16 28c4-10 8-14 16-14" stroke="#0b1f3a" stroke-width="3" fill="none" stroke-linecap="round"/><path d="M18 20l4 4-4 4" stroke="#f5a623" stroke-width="3" fill="none" stroke-linecap="round"/></svg>
-            </div>
+          <article class="service-card reveal">
+            <div class="icon" aria-hidden="true"><svg viewBox="0 0 48 48" width="48" height="48"><path d="M14 28c6-12 10-16 20-16" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round"/><circle cx="24" cy="30" r="5" fill="var(--accent)"/></svg></div>
             <h3>Drain unblock</h3>
             <p>Kitchen, bathroom, and external blockages cleared with jetting and rods. Demo pricing from £89.</p>
           </article>
-          <article class="service-card">
-            <div class="icon" aria-hidden="true">
-              <svg viewBox="0 0 48 48" width="48" height="48"><circle cx="24" cy="24" r="22" fill="#e8eef6"/><rect x="14" y="16" width="20" height="14" rx="2" fill="none" stroke="#0b1f3a" stroke-width="3"/><circle cx="24" cy="23" r="4" fill="#f5a623"/></svg>
-            </div>
+          <article class="service-card reveal">
+            <div class="icon" aria-hidden="true"><svg viewBox="0 0 48 48" width="48" height="48"><rect x="12" y="16" width="22" height="14" rx="3" fill="none" stroke="currentColor" stroke-width="2.5"/><circle cx="23" cy="23" r="4" fill="var(--accent)"/></svg></div>
             <h3>CCTV drain survey</h3>
             <p>Camera inspection with a written report and clip — ideal before purchase or after a recurring block.</p>
           </article>
-          <article class="service-card">
-            <div class="icon" aria-hidden="true">
-              <svg viewBox="0 0 48 48" width="48" height="48"><circle cx="24" cy="24" r="22" fill="#e8eef6"/><path d="M18 30l6-14 6 14" stroke="#0b1f3a" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M20 26h8" stroke="#f5a623" stroke-width="3" stroke-linecap="round"/></svg>
-            </div>
+          <article class="service-card reveal">
+            <div class="icon" aria-hidden="true"><svg viewBox="0 0 48 48" width="48" height="48"><path d="M18 32l6-18 6 18" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round"/><path d="M20 26h8" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round"/></svg></div>
             <h3>Pipe repair</h3>
             <p>Patch lining and section replacement for cracked or collapsed runs. Quote after survey (demo).</p>
+          </article>
+          <article class="service-card reveal">
+            <div class="icon" aria-hidden="true"><svg viewBox="0 0 48 48" width="48" height="48"><path d="M12 18h24v6H12z" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M16 24v8M24 24v8M32 24v8" stroke="var(--accent)" stroke-width="2.5"/></svg></div>
+            <h3>Gully &amp; outdoor</h3>
+            <p>Yard drains, gulley pots, and surface water runs cleared before the next storm.</p>
           </article>
         </div>
       </div>
     </section>
-
-    <section class="areas" id="areas">
-      <div class="wrap areas-grid">
-        <div>
-          <p class="eyebrow">Service area</p>
-          <h2>Covering fictional Mid-Kent towns</h2>
-          <p>
-            For this portfolio demo we cover made-up Mid-Kent locations only —
-            not real client territories.
-          </p>
+    <section class="section section-alt" id="process">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <p class="eyebrow">How it works</p>
+          <h2>From first call to tidy finish</h2>
+          <p>A simple four-step process block — the kind of clarity that closes phone leads.</p>
+        </header>
+        <div class="process-grid">
+          <article class="process-step reveal"><div class="process-num" aria-hidden="true">01</div><h3>Call or form</h3><p>Tell us the symptom — slow sink, overflow, or smell.</p></article>
+          <article class="process-step reveal"><div class="process-num" aria-hidden="true">02</div><h3>Slot booked</h3><p>Same-day language for emergencies; next-day for surveys.</p></article>
+          <article class="process-step reveal"><div class="process-num" aria-hidden="true">03</div><h3>Diagnose &amp; clear</h3><p>Rods, jetting, or CCTV — then a plain-English fix plan.</p></article>
+          <article class="process-step reveal"><div class="process-num" aria-hidden="true">04</div><h3>Leave tidy</h3><p>Invoice emailed; warranty copy on lined repairs (demo).</p></article>
         </div>
-        <ul class="town-list">
-          <li>Ashford Vale</li>
-          <li>Maidstone Heath</li>
-          <li>Tenterden Bridge</li>
-          <li>Sittingbourne Quay</li>
-          <li>Faversham Marsh</li>
-          <li>Canterbury Fields</li>
-        </ul>
       </div>
     </section>
-
-    <section class="trust" id="reviews">
+    <section class="section" id="areas">
+      <div class="wrap areas-grid">
+        <div class="reveal">
+          <p class="eyebrow">Service area</p>
+          <h2>Covering fictional Mid-Kent towns</h2>
+          <p>Map-style cards for layout only — invented place names, not real client territories.</p>
+          <p class="demo-note" style="margin-top:1rem"><strong>DEMO ONLY</strong> — not a real coverage map.</p>
+        </div>
+        <div class="town-grid" role="list">
+          <div class="town-card reveal">Ashford Vale</div>
+          <div class="town-card reveal">Maidstone Heath</div>
+          <div class="town-card reveal">Tenterden Bridge</div>
+          <div class="town-card reveal">Sittingbourne Quay</div>
+          <div class="town-card reveal">Faversham Marsh</div>
+          <div class="town-card reveal">Canterbury Fields</div>
+        </div>
+      </div>
+    </section>
+    <section class="section section-alt" id="reviews">
       <div class="wrap">
-        <header class="section-head">
+        <header class="section-head reveal">
           <p class="eyebrow">Social proof</p>
           <h2>What customers say</h2>
           <p class="demo-note"><strong>DEMO / fictional reviews</strong> — invented for portfolio layout only.</p>
         </header>
         <div class="review-grid">
-          <blockquote class="review">
-            <p>“Called at 7am, engineer here by 9. Kitchen sink sorted. Would use again.”</p>
-            <footer>
-              <cite>Sam P. · Ashford Vale</cite>
-              <span class="demo-pill">DEMO / fictional</span>
-            </footer>
-          </blockquote>
-          <blockquote class="review">
-            <p>“CCTV survey was clear and the quote for lining felt fair. No pressure.”</p>
-            <footer>
-              <cite>Jordan L. · Maidstone Heath</cite>
-              <span class="demo-pill">DEMO / fictional</span>
-            </footer>
-          </blockquote>
-          <blockquote class="review">
-            <p>“Outside drain blocked after storms — jetting fixed it same day.”</p>
-            <footer>
-              <cite>Alex R. · Tenterden Bridge</cite>
-              <span class="demo-pill">DEMO / fictional</span>
-            </footer>
-          </blockquote>
+          <blockquote class="review reveal"><p>“Called at 7am, engineer here by 9. Kitchen sink sorted.”</p><footer><cite>Sam P. · Ashford Vale</cite><span class="demo-pill">DEMO / fictional</span></footer></blockquote>
+          <blockquote class="review reveal"><p>“CCTV survey was clear and the quote for lining felt fair.”</p><footer><cite>Jordan L. · Maidstone Heath</cite><span class="demo-pill">DEMO / fictional</span></footer></blockquote>
+          <blockquote class="review reveal"><p>“Outside drain blocked after storms — jetting fixed it same day.”</p><footer><cite>Alex R. · Tenterden Bridge</cite><span class="demo-pill">DEMO / fictional</span></footer></blockquote>
         </div>
       </div>
     </section>
-
-    <section class="faq" id="faq">
+    <section class="section" id="faq">
       <div class="wrap narrow">
-        <header class="section-head">
-          <p class="eyebrow">FAQ</p>
-          <h2>Common questions</h2>
-        </header>
+        <header class="section-head reveal"><p class="eyebrow">FAQ</p><h2>Common questions</h2></header>
         <div class="faq-list">
-          <details open>
-            <summary>Is this a real drainage company?</summary>
-            <p><strong>No.</strong> Ashford Drain Co is a fictional brand built by Kerbstone Studio to demonstrate a Spark one-page trade website.</p>
-          </details>
-          <details>
-            <summary>How fast can you attend?</summary>
-            <p>Demo copy: emergency callouts aimed at same-day within Mid-Kent fictional towns, subject to diary.</p>
-          </details>
-          <details>
-            <summary>Do you charge a call-out fee?</summary>
-            <p>Demo copy: no call-out fee when you book a job from the visit. Survey-only visits quoted up front.</p>
-          </details>
-          <details>
-            <summary>What payment methods do you take?</summary>
-            <p>Demo copy: card, bank transfer, and cash. Invoices emailed after the visit.</p>
-          </details>
+          <details class="reveal" open><summary>Is Ashford Drain Co a real company?</summary><p><strong>No.</strong> This is a fictional brand created by Kerbstone Studio to showcase a Spark drainage website.</p></details>
+          <details class="reveal"><summary>Do you charge a call-out fee?</summary><p>Demo copy: no call-out fee when you book a job. Survey-only visits are quoted upfront.</p></details>
+          <details class="reveal"><summary>Can you CCTV before I buy a house?</summary><p>Demo copy: yes — we film the run, share a clip, and write a short report for your solicitor.</p></details>
+          <details class="reveal"><summary>What areas do you cover?</summary><p>Demo copy: fictional Mid-Kent towns listed on this page only — not real territories.</p></details>
         </div>
       </div>
     </section>
-
-    <section class="contact" id="contact">
+    <section class="section section-alt" id="contact">
       <div class="wrap contact-grid">
-        <div>
-          <p class="eyebrow">Get in touch</p>
+        <div class="reveal">
+          <p class="eyebrow">Contact</p>
           <h2>Request a callback</h2>
-          <p>
-            Netlify Forms demo — submissions only work when deployed on Netlify.
-            This is not monitored for real jobs.
-          </p>
-          <p class="demo-note"><strong>DEMO ONLY</strong> — fictional brand for Kerbstone Studio portfolio.</p>
+          <p>Netlify Forms demo — works when hosted on Netlify. Submissions are not handled as real bookings.</p>
+          <p class="demo-note" style="margin-top:1rem"><strong>DEMO ONLY</strong> — fictional brand for Kerbstone Studio portfolio.</p>
+          <p style="margin-top:1.25rem"><a class="btn btn-ghost" href="tel:01234567890">Or call 01234 567890</a></p>
         </div>
-        <form name="ashford-contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html">
+        <form class="reveal" name="ashford-contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html">
           <input type="hidden" name="form-name" value="ashford-contact" />
-          <p class="honeypot">
-            <label>Don’t fill this out: <input name="bot-field" /></label>
-          </p>
-          <label>
-            Name
-            <input type="text" name="name" required autocomplete="name" placeholder="Your name" />
-          </label>
-          <label>
-            Phone
-            <input type="tel" name="phone" required autocomplete="tel" placeholder="07…" />
-          </label>
-          <label>
-            Email
-            <input type="email" name="email" required autocomplete="email" placeholder="you@example.com" />
-          </label>
-          <label>
-            Town
-            <input type="text" name="town" placeholder="e.g. Ashford Vale" />
-          </label>
-          <label>
-            How can we help?
-            <textarea name="message" rows="4" required placeholder="Blocked sink, CCTV survey, repair…"></textarea>
-          </label>
-          <button class="btn btn-amber btn-lg btn-block" type="submit">Send message</button>
+          <p class="honeypot"><label>Don’t fill this out: <input name="bot-field" tabindex="-1" autocomplete="off" /></label></p>
+          <label>Name <input type="text" name="name" required autocomplete="name" placeholder="Your name" /></label>
+          <label>Email <input type="email" name="email" required autocomplete="email" placeholder="you@example.com" /></label>
+          <label>Phone <input type="tel" name="phone" autocomplete="tel" placeholder="07…" /></label>
+          <label>Town <input type="text" name="town" placeholder="e.g. Ashford Vale" /></label>
+          <label>Message <textarea name="message" rows="4" required placeholder="How can we help?"></textarea></label>
+          <button class="btn btn-accent btn-lg btn-block" type="submit">Send callback request</button>
           <p class="form-note">By submitting you acknowledge this is a DEMO form for portfolio purposes.</p>
         </form>
       </div>
     </section>
   </main>
-
   <footer class="site-footer">
     <div class="wrap footer-inner">
-      <div>
-        <strong>Ashford Drain Co</strong>
-        <p>DEMO — fictional brand for Kerbstone Studio portfolio. Not a real business.</p>
-      </div>
-      <div>
-        <p>Fictional tel: <a href="tel:01234567890">01234 567890</a></p>
-        <p>Mid-Kent · UK trade Spark demo</p>
-      </div>
-      <div>
-        <p>Built by Kerbstone Studio</p>
-        <p class="demo-pill">DEMO / fictional</p>
-      </div>
+      <div><strong>Ashford Drain Co</strong><p>DEMO — fictional brand for Kerbstone Studio portfolio. Not a real business.</p></div>
+      <div><p>Fictional drainage Spark demo · Mid-Kent</p><p>No custom domain · Netlify preview only</p></div>
+      <div><p>Built by Kerbstone Studio</p><p><span class="demo-pill">DEMO / fictional</span></p><p>&copy; <span data-year></span> Kerbstone Studio</p></div>
     </div>
   </footer>
-
+  <div class="mobile-call" role="region" aria-label="Quick call">
+    <a class="btn btn-accent" href="tel:01234567890">Emergency call</a>
+    <a class="btn btn-ghost" href="#contact">Message</a>
+  </div>
   <script src="script.js" defer></script>
 </body>
 </html>

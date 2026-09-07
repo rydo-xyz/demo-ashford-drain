@@ -1,20 +1,16 @@
 # Ashford Drain Co — DEMO ONLY
 
-**Fictional brand** built for the **Kerbstone Studio** portfolio to demonstrate a Spark-tier one-page trade website.
+**Fictional brand** built for the **Kerbstone Studio** portfolio to demonstrate a premium Spark-tier (£895) one-page trade website.
 
 - Not a real business
 - Phone number `01234 567890` is fictional
-- Reviews and towns are invented
+- Reviews, metrics, and towns are invented
 - Do **not** present this as a live client
 
 ## Stack
 
-Static HTML / CSS / tiny JS. Netlify Forms on the contact form (`data-netlify="true"`).
+Static HTML / CSS / JS. Google Fonts (Oswald + Source Sans 3). Netlify Forms (`ashford-contact`) with honeypot. SVG hero scene (no stock photos).
 
 ## Deploy
 
-See `/workspace/demos/BUILD.md`. Publish directory is `.` (this folder). No custom domain.
-
-## Local preview
-
-Open `index.html` in a browser, or serve the folder with any static server.
+Publish directory is `.` (this folder). No custom domain. `X-Robots-Tag: noindex` via `netlify.toml`.
